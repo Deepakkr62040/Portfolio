@@ -43,6 +43,7 @@ body
     transition: .3s;
     opacity: 0;
     animation: slideTop .5s ease forwards;
+    animation-delay: calc(.2s * val(--i));
 }
 .navbar a:hover{
     color: #0ef;
@@ -72,6 +73,8 @@ body
 }
 .home-content h3:nth-of-type(2){
     margin-bottom: 30px;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .7s;
 
 }
 .home-content h3 span{
@@ -109,7 +112,8 @@ body
     transition: .5s ease;
     opacity: 0;
     animation: slideLeft 1s ease forwards;
-    animation-delay:  .7s;
+    animation-delay: calc(.2s * var(--i));
+
     margin: 30px 15px 30px 0;
 }
 .home-sci a:hover{
@@ -127,7 +131,11 @@ body
     letter-spacing: 1px;
     text-decoration: none;
     font-weight: 600;
-
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+    box-shadow: 0 0 5px #0ef,
+    0 0 25px #0ef;
 
 }
 .btn-box:hover{
@@ -158,8 +166,6 @@ body
         opacity: 1;
     }
 }
-
-
 
 
 @keyframes slideTop{
