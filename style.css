@@ -62,6 +62,9 @@ body
     font-weight: 700;
 
 }
+.home-content h3 span{
+    color: #0ef;
+}
 .home-content h1{
     font-size: 56px;
     font-weight: 700;
