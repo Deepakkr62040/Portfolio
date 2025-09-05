@@ -23,3 +23,14 @@ menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
 }
+
+//download btn
+document.getElementById('downloadBtn').addEventListener('click', function () {
+    // Create a hidden link element
+    const link = document.createElement('a');
+    link.href = 'Updated CV.pdf'; // <-- Replace with your CV file path
+    link.download = 'Updated CV.pdf'; // <-- Name for the downloaded file
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+});

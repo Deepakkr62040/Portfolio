@@ -315,35 +315,79 @@ span {
         width: calc(100% + 8px);
     }
 } 
-
+/* about section  */
 .about {
-    /* display: flex; */
+    background: var(--second-bg-color);
+    color: white;
+    min-width: 100vh;
+    padding: 7.5rem 12% 10rem;
+}
+
+.about-container {
+    display: flex;
     align-items: center;
     justify-content: center;
     gap: 10rem;
+    margin-top: -40px;
+    margin-bottom: 30px;
 }
-
-.about-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: left;
-    justify-content: center;
-    margin-top: 1rem;
-    gap: 1.5rem;
-}
-
-.about-content h3 {
-    margin-bottom: 1rem;
-    margin-top: .5rem;
+.about-info-h3 {
     font-size: 3.5rem;
+    margin-bottom: 1rem;
 }
-.about-content h1 {
-    font-size: 7rem;
+.about-img img {
+    width: 25rem;
+    border-radius: 50%;
+    border: 3px solid var(--main-color);
+    box-shadow: 0 0 25px var(--main-color);
+}
+
+.info-title {
+    font-size: 2.6rem;
     font-weight: 700;
-    margin-top: 1.5rem;
-    line-height: 1;
+    margin-bottom: 2rem;
 }
+
+.info-about {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.8;
+    margin-bottom: 3rem;
+    margin-top: 50px;
+}
+
+.cont2 {
+    margin-top: 1.5rem;
+    line-height: 1.8;
+    max-width: 700px;
+    border-radius: 25px;
+    padding: 10px;
+    border: #00ffee solid 1.5px;
+
+}
+
+.cont3 {
+    margin-top: 1.5rem;
+    line-height: 1.8;
+    max-width: auto;
+    border-radius: 25px;
+    padding: 10px;
+    border: #00ffee solid 1.5px;
+
+}
+
+.cont4 {
+    margin-top: 1.5rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.8;
+    justify-self: center;
+    max-width: 200px;
+    border-radius: 25px;
+    padding: 10px;
+
+}
+/* end about section */
 
 .heading {
     font-size: 8rem;
@@ -352,7 +396,7 @@ span {
 }
 .education {
     padding: 100px 15px;
-    background: var(--second-bg-color);
+    background: var(--bg-color);
 }
 .education h2 {
     margin-bottom: 5rem;
@@ -441,6 +485,57 @@ span {
     background: var(--second-bg-color);
     width: 50px;
 }
+/* skill section */
+
+.skills {
+    background: var(--second-bg-color);
+}
+.skills-box {
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.skills .heading {
+    margin-bottom: 5rem;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+.skill-item {
+    min-height: 450px;
+    max-width: 350px;
+    background: rgba(0, 0, 0, 0.7);
+    border: 3px solid rgba(238, 238, 238, 0.2);
+    border-radius: 2rem;
+    margin: 0 3rem;
+    padding: 30px 60px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1.5rem;
+    color: white;
+    transition: 0.4s ease-in-out;
+}
+.skill-item:hover {
+    border: 3px solid var(--main-color);
+    transform: translateY(-10ps)scale(1.03);
+    box-shadow: 0 0 50px var(--main-color);
+}
+.skill-item h2 {
+    font-size: 2.8rem;
+}
+.skill-item p {
+    font-size: 1.3rem;
+}
+/* end skill section */
 .services {
     background: var(--bg-color);
     color: black;
